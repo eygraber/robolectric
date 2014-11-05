@@ -58,7 +58,15 @@ public class XmlFileBuilder {
     if (document == null) {
       throw new Resources.NotFoundException("couldn't find resource " + fsFile.getPath());
     }
+
+    /*
+    TODO: This is not working in our project because of our third party libraries and
+          Google Play Services. We are not sure how to correctly handle this so for now
+          We are just going to ignore it. See
+          <https://github.com/robolectric/robolectric/pull/1272#issuecomment-61844670>
     replaceResAutoNamespace(document, packageName);
+    */
+
     return new XmlFileBuilder().getXml(document, fsFile.getPath(), packageName, resourceIndex);
   }
 

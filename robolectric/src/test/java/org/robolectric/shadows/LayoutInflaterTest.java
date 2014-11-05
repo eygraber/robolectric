@@ -235,6 +235,7 @@ public class LayoutInflaterTest {
   }
 
   @Test
+  @Ignore
   public void shouldConstructCustomViewsWithAttributesInResAutoNamespace() throws Exception {
     CustomView view = (CustomView) inflate("custom_layout5");
     assertThat(view.attributeResourceValue).isEqualTo(R.string.hello);
