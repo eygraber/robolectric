@@ -9,7 +9,7 @@
     <version>7</version>
   </parent>
 
-  <groupId>org.robolectric</groupId>
+  <groupId>com.staticbloc.robolectric</groupId>
   <artifactId>robolectric-parent</artifactId>
   <version>2.4-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -32,7 +32,7 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.robolectric</groupId>
+        <groupId>com.staticbloc.robolectric</groupId>
         <artifactId>robolectric-annotations</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -110,7 +110,7 @@
           </executions>
           <dependencies>
             <dependency>
-              <groupId>org.robolectric</groupId>
+              <groupId>com.staticbloc.robolectric</groupId>
               <artifactId>robolectric-processor</artifactId>
               <version>${project.version}</version>
             </dependency>
